@@ -8,6 +8,7 @@ use warnings;
 ## scalar
 my $string = 'foo';
 my $integer = 123;
+my $float = 1.3;
 
 
 ## array
@@ -32,4 +33,7 @@ my %fruit_color_arrow_operator = (
 
 ### get a element of hash by key
 my $apple_color = $fruit_color{apple}; # red
-print $apple_color;
+
+### retrieve all keys/values using keys/values function
+my @keys = keys %fruit_color; #('apple', 'banana')
+my @values = values %fruit_color; #('red', 'yellow')
