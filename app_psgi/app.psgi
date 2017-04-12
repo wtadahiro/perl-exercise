@@ -1,11 +1,6 @@
 use strict;
 use warnings;
+use Mojolicious::Commands;
 
-sub {
-  my $env = shift;
-  [
-    200,
-    ['Content-Type' => 'text/plain'],
-    ["Hello world\n"],
-  ];
-}
+Mojolicious::Commands->start_app('App');
+
